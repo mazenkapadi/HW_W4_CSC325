@@ -5,10 +5,6 @@ package com.mycompany.agency;
 
 public class StaffEmployee extends StaffMember
 {
-
-
-
-
     protected String socialSecurityNumber;
     protected double payRate;
 
@@ -17,7 +13,7 @@ public class StaffEmployee extends StaffMember
     //  information.
     //-----------------------------------------------------------------
     public StaffEmployee(String eName, String eAddress, String ePhone,
-                         String socSecNumber, double rate)
+            String socSecNumber, double rate)
     {
         super(eName, eAddress, ePhone);
 
@@ -25,18 +21,13 @@ public class StaffEmployee extends StaffMember
         payRate = rate;
     }
 
-    public StaffEmployee() {
-        super();
-    }
-
     //-----------------------------------------------------------------
-    // TODO 3: complete the implementation of toString to return information
+    // TODO 3: complete the implementation of toString to return information 
     //          about a staff employee as a string.
     //-----------------------------------------------------------------
     public String toString()
     {
-        return ("Payrate: " + payRate + " Social security: " + socialSecurityNumber + " Name: " + name + " Address " + address + " phone " + phone);
-
+    
     }
 
     //-----------------------------------------------------------------
@@ -44,7 +35,6 @@ public class StaffEmployee extends StaffMember
     //-----------------------------------------------------------------
     public double pay()
     {
-        double pay = payRate;
-        return pay;
+       
     }
 }

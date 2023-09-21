@@ -14,16 +14,11 @@ public class Staff
     {
         staffList = new StaffMember[6];
 
-
-
-
-
-
         // TODO 1: Add 6 emploees to the staffList
 
         ((Executive)staffList[0]).awardBonus(500.00);
 
-        ((TempEmploee)staffList[6]).addHours(40);
+        ((TempEmploee)staffList[3]).addHours(40);
     }
 
     //-----------------------------------------------------------------
