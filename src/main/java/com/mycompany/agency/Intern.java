@@ -6,6 +6,8 @@ package com.mycompany.agency;
 
 public class Intern extends StaffEmployee
 {
+    
+}
     //-----------------------------------------------------------------
     //  TODO 2: Constructor: Sets up this intern using the specified
     //  information.
@@ -23,6 +25,5 @@ public class Intern extends StaffEmployee
     //-----------------------------------------------------------------
     public double pay()
     {
-
         return payRate = 0.0;
     }
