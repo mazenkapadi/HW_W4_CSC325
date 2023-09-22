@@ -32,6 +32,6 @@ public class Executive
     //-----------------------------------------------------------------
     public double pay()
     {
-       
+       return rate + bonus;
     }
 }
