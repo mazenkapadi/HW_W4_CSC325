@@ -5,7 +5,7 @@ package com.mycompany.agency;
 
 public class Staff
 {
-    private StaffMember[] staffList;
+    private final StaffMember[] staffList;
 
     //-----------------------------------------------------------------
     //  Constructor: Sets up the list of staff members.
@@ -14,11 +14,16 @@ public class Staff
     {
         staffList = new StaffMember[6];
 
-        // TODO 1: Add 6 emploees to the staffList
+        staffList[0]= new Executive("name","address", "phone", "SSN", 30.0);
+        staffList[1]= new Executive("name","address", "phone", "SSN", 30.0);
+        staffList[2]= new StaffEmployee("name","address", "phone", "SSN", 30.0);
+        staffList[3]= new TempEmployee("name","address", "phone", "SSN", 30.0);
+        staffList[4]= new Intern("name", "address", "phone");
+        staffList[5]= new Executive("name","address", "phone", "SSN", 30.0);
 
         ((Executive)staffList[0]).awardBonus(500.00);
 
-        ((TempEmploee)staffList[3]).addHours(40);
+        ((TempEmployee)staffList[3]).addHours(40);
     }
 
     //-----------------------------------------------------------------
@@ -28,11 +33,10 @@ public class Staff
     {
         double amount;
 
-        for (int count=0; count < staffList.length; count++)
-        {
-            System.out.println(staffList[count]);
+        for (StaffMember staffMember : staffList) {
+            System.out.println(staffMember);
 
-            amount = staffList[count].pay();  // polymorphic
+            amount = staffMember.pay();  // polymorphic
 
             if (amount == 0.0)
                 System.out.println("Thanks!");
