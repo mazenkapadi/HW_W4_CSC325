@@ -15,9 +15,9 @@ package com.mycompany.agency;
     //-----------------------------------------------------------------
     public StaffMember(String eName, String eAddress, String ePhone)
     {
-        /*name = eName;
+        name = eName;
         address = eAddress;
-        phone = ePhone;*/
+        phone = ePhone;
     }
 
     //-----------------------------------------------------------------
@@ -25,7 +25,7 @@ package com.mycompany.agency;
     //-----------------------------------------------------------------
     public String toString()
     {
- //return "Name: " + name + "\nAddress: " + address + "\nPhone: " + phone;
+    return "Name: " + name + "\nAddress: " + address + "\nPhone: " + phone;
     }
 
     //-----------------------------------------------------------------
