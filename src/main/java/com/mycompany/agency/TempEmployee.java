@@ -4,7 +4,7 @@ package com.mycompany.agency;
 
     // TODO 1: Make TempEmploee a child of StaffEmploee
 
-public class TempEmployee extends StaffEmployee
+public class TempEmployee //extends StaffEmployee
 {
     private int hoursWorked;
 
@@ -15,9 +15,9 @@ public class TempEmployee extends StaffEmployee
     public TempEmployee(String eName, String eAddress, String ePhone,
             String socSecNumber, double rate)
     {
-        super(eName, eAddress, ePhone, socSecNumber, rate);
+        //super(eName, eAddress, ePhone, socSecNumber, rate);
 
-        hoursWorked = 0;
+        //hoursWorked = 0;
     }
 
     //-----------------------------------------------------------------
@@ -26,7 +26,7 @@ public class TempEmployee extends StaffEmployee
     //-----------------------------------------------------------------
     public void addHours(int moreHours)
     {
-        hoursWorked += moreHours;
+        //hoursWorked += moreHours;
     }
 
     //-----------------------------------------------------------------
@@ -34,7 +34,7 @@ public class TempEmployee extends StaffEmployee
     //-----------------------------------------------------------------
     public double pay()
     {
-        return hoursWorked * super.payRate;
+        //return hoursWorked * super.payRate;
     }
 
     //-----------------------------------------------------------------
@@ -42,6 +42,6 @@ public class TempEmployee extends StaffEmployee
     //-----------------------------------------------------------------
     public String toString()
     {
-return "Employe Name: " +super.name + "\nEmployee ID: " + super.socialSecurityNumber;
+//return "Employe Name: " +super.name + "\nEmployee ID: " + super.socialSecurityNumber;
     }
 }
