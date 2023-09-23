@@ -8,6 +8,7 @@ public class TempEmployee extends StaffEmployee
 {
 
 
+
     private int hoursWorked;
 
     //-----------------------------------------------------------------

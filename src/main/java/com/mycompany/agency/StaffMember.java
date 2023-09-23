@@ -6,6 +6,7 @@ package com.mycompany.agency;
  abstract public class StaffMember
 {
 
+
     protected String name;
     protected String address;
     protected String phone;
