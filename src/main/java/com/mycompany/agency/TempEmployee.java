@@ -7,6 +7,7 @@ package com.mycompany.agency;
 public class TempEmployee extends StaffEmployee
 {
 
+
     private int hoursWorked;
 
     //-----------------------------------------------------------------
