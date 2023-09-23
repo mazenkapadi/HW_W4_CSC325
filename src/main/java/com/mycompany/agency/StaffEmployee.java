@@ -28,7 +28,7 @@ public class StaffEmployee extends StaffMember
     public String toString()
     {
     return "Name: " + name + "\nAddress: " + address + "\nPhone: " + phone + 
-        "\nSocial Security Number: " + socSecNumber + "\nPay Rate: " + rate;
+        "\nSocial Security Number: " + socialSecurityNumber + "\nPay Rate: " + payRate;
     }
 
     //-----------------------------------------------------------------
@@ -36,6 +36,6 @@ public class StaffEmployee extends StaffMember
     //-----------------------------------------------------------------
     public double pay()
     {
-       return rate;
+       return payRate;
     }
 }
