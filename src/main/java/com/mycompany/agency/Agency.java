@@ -1,16 +1,19 @@
 package com.mycompany.agency;
 
-
-
-public class Agency
-{
-    //-----------------------------------------------------------------
-    //  Creates a staff of employees for a agency and pays them.
-    //-----------------------------------------------------------------
-    public static void main(String[] args)
-    {
+/**
+ * The main class for creating a staff of employees for an agency and paying them.
+ */
+public class Agency {
+    /**
+     * Main method that creates a staff of employees and pays them.
+     *
+     * @param args The command-line arguments (not used in this application).
+     */
+    public static void main(String[] args) {
+        // Create a staff of employees
         Staff personnel = new Staff();
 
+        // Perform payday processing
         personnel.payday();
     }
 }

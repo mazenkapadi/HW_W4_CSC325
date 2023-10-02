@@ -1,28 +1,29 @@
 package com.mycompany.agency;
 
-
-
-    // TODO 1: Make Intern a child of StaffEmploee
-
+/**
+ * A class representing an Intern employee, which is a child class of StaffEmployee.
+ */
 public class Intern extends StaffEmployee {
 
-
-    //-----------------------------------------------------------------
-    //  TODO 2: Constructor: Sets up this intern using the specified
-    //  information.
-    //-----------------------------------------------------------------
+    /**
+     * Constructor: Initializes an Intern employee with the specified information.
+     *
+     * @param eName    The name of the intern.
+     * @param eAddress The address of the intern.
+     * @param ePhone   The phone number of the intern.
+     */
     public Intern(String eName, String eAddress, String ePhone) {
-        super(eName,eAddress,ePhone,"XXX", 0);
-
-        name = eName;
-        address = eAddress;
-        phone = ePhone;
+        // Call the constructor of the parent class (StaffEmployee)
+        // Pass "XXX" as the Social Security number and 0 as the pay rate
+        super(eName, eAddress, ePhone, "XXX", 0);
     }
 
-    //-----------------------------------------------------------------
-    // TODO 3:  Returns a zero pay value for this intern.
-    //-----------------------------------------------------------------
+    /**
+     * Computes and returns a zero pay value for this intern.
+     *
+     * @return The pay amount for the intern (which is always 0).
+     */
     public double pay() {
-        return payRate = 0.0;
+        return 0.0;
     }
 }
